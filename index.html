@@ -192,7 +192,7 @@ footer b{color:var(--gold-2)}
     </div>
     <div class="steps">
       <div class="step"><h4 data-ar="حمّل وثبّت" data-en="Download &amp; install">حمّل وثبّت</h4><p data-ar="حمّل البرنامج من الموقع وثبّته على جهازك" data-en="Download the program and install it on your PC">حمّل البرنامج من الموقع وثبّته على جهازك</p></div>
-      <div class="step"><h4 data-ar="أرسل رقم الجهاز" data-en="Send your machine ID">أرسل رقم الجهاز</h4><p data-ar="البرنامج يعرض رقم جهازك، أرسله لنا على واتساب" data-en="The program shows your machine ID; send it to us on WhatsApp">البرنامج يعرض رقم جهازك، أرسله لنا على واتساب</p></div>
+      <div class="step"><h4 data-ar="راسلنا على واتساب" data-en="Message us on WhatsApp">راسلنا على واتساب</h4><p data-ar="ونساعدك خطوة بخطوة في تجهيز التفعيل" data-en="We will guide you step by step through activation">ونساعدك خطوة بخطوة في تجهيز التفعيل</p></div>
       <div class="step"><h4 data-ar="حوّل المبلغ" data-en="Make the transfer">حوّل المبلغ</h4><p data-ar="تحويل بنكي أو محفظة إلكترونية حسب الاتفاق" data-en="Bank transfer or e-wallet, as agreed">تحويل بنكي أو محفظة إلكترونية حسب الاتفاق</p></div>
       <div class="step"><h4 data-ar="استلم مفتاح التفعيل" data-en="Receive your key">استلم مفتاح التفعيل</h4><p data-ar="يصلك مفتاح خاص بجهازك ويتفعّل البرنامج مباشرة" data-en="You get a key bound to your PC and the program activates immediately">يصلك مفتاح خاص بجهازك ويتفعّل البرنامج مباشرة</p></div>
     </div>
@@ -233,10 +233,10 @@ function wa(msgAr, msgEn){
   return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(m);
 }
 function setLinks(){
-  document.getElementById("waTank").href = wa("مرحباً، بلغني عند إطلاق برنامج TankDesign RC", "Hello, please notify me when TankDesign RC launches");
+  document.getElementById("waTank").href = wa("السلام عليكم م. هنادي،\nأرجو إبلاغي عند إطلاق برنامج TankDesign RC.", "Hello Eng. Hanadi,\nPlease let me know when TankDesign RC is released.");
   document.getElementById("dlBcq").href = CONFIG.bcqDownload;
-  document.getElementById("waBcq").href = wa("مرحباً، بدي أشتري ترخيص برنامج BCQ", "Hello, I would like to buy a BCQ licence");
-  document.getElementById("waMain").href = wa("مرحباً، عندي استفسار عن برامج HES", "Hello, I have a question about HES programs");
+  document.getElementById("waBcq").href = wa("السلام عليكم م. هنادي،\nأرغب بشراء ترخيص برنامج BCQ.", "Hello Eng. Hanadi,\nI would like to purchase a BCQ licence.");
+  document.getElementById("waMain").href = wa("السلام عليكم م. هنادي،\nلدي استفسار بخصوص برامج HES: ", "Hello Eng. Hanadi,\nI have a question about HES programs: ");
 }
 function applyLang(l){
   lang = l;
