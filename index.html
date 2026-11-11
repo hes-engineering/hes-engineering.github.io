@@ -150,8 +150,8 @@ footer b{color:var(--gold-2)}
           <li data-ar="كميات الخرسانة والطوب، وتقارير Excel عربي أو إنجليزي" data-en="Concrete &amp; block quantities, Excel reports in Arabic or English">كميات الخرسانة والطوب، وتقارير Excel عربي أو إنجليزي</li>
         </ul>
         <div class="btns">
-          <a class="btn btn-navy" id="dlBcq" href="#" data-ar="تحميل البرنامج" data-en="Download">تحميل البرنامج</a>
-          <a class="btn btn-wa" id="waBcq" href="#" target="_blank" rel="noopener" data-ar="اطلب ترخيص" data-en="Request a licence">اطلب ترخيص</a>
+          <a class="btn btn-navy" id="dlBcq" data-goatcounter-click="download-bcq" data-goatcounter-title="تحميل BCQ" href="#" data-ar="تحميل البرنامج" data-en="Download">تحميل البرنامج</a>
+          <a class="btn btn-wa" id="waBcq" data-goatcounter-click="whatsapp-bcq" data-goatcounter-title="واتساب شراء BCQ" href="#" target="_blank" rel="noopener" data-ar="اطلب ترخيص" data-en="Request a licence">اطلب ترخيص</a>
         </div>
         <div class="req" data-ar="يعمل على Windows 10 / 11 (64-bit)" data-en="Runs on Windows 10 / 11 (64-bit)">يعمل على Windows 10 / 11 (64-bit)</div>
         <div class="note" data-ar="<b>ملاحظة عند التثبيت:</b> إذا ظهرت رسالة ويندوز الزرقاء (Windows protected your PC)، اضغط <b>More info</b> ثم <b>Run anyway</b>. هذا التحذير طبيعي للبرامج الجديدة، والبرنامج آمن." data-en="<b>Installation note:</b> If the blue Windows message (Windows protected your PC) appears, click <b>More info</b> then <b>Run anyway</b>. This warning is normal for new programs, and the program is safe."><b>ملاحظة عند التثبيت:</b> إذا ظهرت رسالة ويندوز الزرقاء (Windows protected your PC)، اضغط <b>More info</b> ثم <b>Run anyway</b>. هذا التحذير طبيعي للبرامج الجديدة، والبرنامج آمن.</div>
@@ -177,7 +177,7 @@ footer b{color:var(--gold-2)}
           <li data-ar="تصدير مخططات التسليح والتفاصيل الإنشائية إلى AutoCAD (DXF)" data-en="Export of reinforcement drawings and structural details to AutoCAD (DXF)">تصدير مخططات التسليح والتفاصيل الإنشائية إلى AutoCAD (DXF)</li>
         </ul>
         <div class="btns">
-          <a class="btn btn-ghost" id="waTank" href="#" target="_blank" rel="noopener" data-ar="أبلغني عند الإطلاق" data-en="Notify me at launch">أبلغني عند الإطلاق</a>
+          <a class="btn btn-ghost" id="waTank" data-goatcounter-click="whatsapp-tank" data-goatcounter-title="واتساب الخزان" href="#" target="_blank" rel="noopener" data-ar="أبلغني عند الإطلاق" data-en="Notify me at launch">أبلغني عند الإطلاق</a>
         </div>
         <div class="req" data-ar="يعمل على Windows 10 / 11 (64-bit)" data-en="Runs on Windows 10 / 11 (64-bit)">يعمل على Windows 10 / 11 (64-bit)</div>
       </div>
@@ -203,7 +203,7 @@ footer b{color:var(--gold-2)}
     <div class="contact">
       <div class="title" style="margin-bottom:12px"><h2 data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</h2></div>
       <p data-ar="للاستفسار والشراء والدعم الفني، راسلنا مباشرة على واتساب" data-en="For questions, purchases and technical support, message us on WhatsApp">للاستفسار والشراء والدعم الفني، راسلنا مباشرة على واتساب</p>
-      <a class="btn btn-wa" id="waMain" href="#" target="_blank" rel="noopener">
+      <a class="btn btn-wa" id="waMain" data-goatcounter-click="whatsapp-contact" data-goatcounter-title="واتساب تواصل" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
         <span data-ar="راسلنا على واتساب" data-en="Message us on WhatsApp">راسلنا على واتساب</span>
       </a>
@@ -253,5 +253,6 @@ var saved = null;
 try { saved = localStorage.getItem("hes-lang"); } catch(e){}
 applyLang(saved === "en" ? "en" : "ar");
 </script>
+<script data-goatcounter="https://hed-ngineering.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
