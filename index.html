@@ -77,6 +77,9 @@ section{padding:56px 0}
 .card li::before{content:"";position:absolute;inset-inline-start:2px;top:.62em;width:9px;height:9px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
 .card .btns{justify-content:flex-start}
 .req{font-size:13px;color:var(--muted);margin-top:12px}
+.note{margin-top:12px;font-size:13px;line-height:1.6;background:#fdf3d7;color:#6b5200;border:1px solid #f0dd9c;border-radius:8px;padding:10px 12px}
+.note b{color:#4d3b00}
+@media (prefers-color-scheme: dark){.note{background:#2e2709;color:#f0d98a;border-color:#4d4214}.note b{color:#ffe9a3}}
 
 /* Steps */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
@@ -151,6 +154,7 @@ footer b{color:var(--gold-2)}
           <a class="btn btn-wa" id="waBcq" href="#" target="_blank" rel="noopener" data-ar="اطلب ترخيص" data-en="Request a licence">اطلب ترخيص</a>
         </div>
         <div class="req" data-ar="يعمل على Windows 10 / 11 (64-bit)" data-en="Runs on Windows 10 / 11 (64-bit)">يعمل على Windows 10 / 11 (64-bit)</div>
+        <div class="note" data-ar="<b>ملاحظة عند التثبيت:</b> إذا ظهرت رسالة ويندوز الزرقاء (Windows protected your PC)، اضغط <b>More info</b> ثم <b>Run anyway</b>. هذا التحذير طبيعي للبرامج الجديدة، والبرنامج آمن." data-en="<b>Installation note:</b> If the blue Windows message (Windows protected your PC) appears, click <b>More info</b> then <b>Run anyway</b>. This warning is normal for new programs, and the program is safe."><b>ملاحظة عند التثبيت:</b> إذا ظهرت رسالة ويندوز الزرقاء (Windows protected your PC)، اضغط <b>More info</b> ثم <b>Run anyway</b>. هذا التحذير طبيعي للبرامج الجديدة، والبرنامج آمن.</div>
       </div>
 
       <!-- TankDesign RC -->
@@ -166,7 +170,8 @@ footer b{color:var(--gold-2)}
         <ul>
           <li data-ar="4 أنواع: أرضي مستطيل، أرضي دائري، علوي مستطيل، علوي دائري" data-en="4 types: ground rectangular, ground circular, elevated rectangular, elevated circular">4 أنواع: أرضي مستطيل، أرضي دائري، علوي مستطيل، علوي دائري</li>
           <li data-ar="تحليل بالعناصر المحدودة (FEM)" data-en="Finite element analysis (FEM)">تحليل بالعناصر المحدودة (FEM)</li>
-          <li data-ar="حسب ACI 318M و ACI 350، والزلازل حسب UBC97" data-en="Per ACI 318M and ACI 350, seismic per UBC97">حسب ACI 318M و ACI 350، والزلازل حسب UBC97</li>
+          <li data-ar="حسب ACI 318M و ACI 350" data-en="Per ACI 318M and ACI 350">حسب ACI 318M و ACI 350</li>
+          <li data-ar="الزلازل حسب UBC97 أو الكود الأمريكي ASCE 7-16 مع ACI 350.3-06" data-en="Seismic per UBC97 or the American code ASCE 7-16 with ACI 350.3-06">الزلازل حسب UBC97 أو الكود الأمريكي ASCE 7-16 مع ACI 350.3-06</li>
           <li data-ar="جدول تحققات يعرض متطلب الكود بالأرقام" data-en="Checks table showing code requirements with numbers">جدول تحققات يعرض متطلب الكود بالأرقام</li>
           <li data-ar="تقارير Word وتصدير الجداول إلى Excel" data-en="Word reports and Excel export of result tables">تقارير Word وتصدير الجداول إلى Excel</li>
         </ul>
