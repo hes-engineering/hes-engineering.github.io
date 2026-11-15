@@ -167,7 +167,7 @@ footer b{color:var(--gold-2)}
           <div>
             <h3>TankDesign RC</h3>
             <div class="sub" data-ar="تصميم الخزانات الخرسانية المسلحة" data-en="Reinforced concrete water tank design">تصميم الخزانات الخرسانية المسلحة</div>
-            <span class="tag tag-soon" data-ar="قريباً" data-en="Coming soon">قريباً</span>
+            <span class="tag tag-ok" data-ar="متاح نسخة تجريبية مجانية لمدة 7 أيام" data-en="Free 7-day trial available">متاح نسخة تجريبية مجانية لمدة 7 أيام</span>
           </div>
         </div>
         <ul>
@@ -180,9 +180,11 @@ footer b{color:var(--gold-2)}
           <li data-ar="تصدير مخططات التسليح والتفاصيل الإنشائية إلى AutoCAD (DXF)" data-en="Export of reinforcement drawings and structural details to AutoCAD (DXF)">تصدير مخططات التسليح والتفاصيل الإنشائية إلى AutoCAD (DXF)</li>
         </ul>
         <div class="btns">
-          <a class="btn btn-ghost" id="waTank" data-goatcounter-click="whatsapp-tank" data-goatcounter-title="واتساب الخزان" href="#" target="_blank" rel="noopener" data-ar="أبلغني عند الإطلاق" data-en="Notify me at launch">أبلغني عند الإطلاق</a>
+          <a class="btn btn-navy" id="dlTank" data-goatcounter-click="download-tank" data-goatcounter-title="تحميل الخزان" href="#" data-ar="تحميل النسخة التجريبية" data-en="Download free trial">تحميل النسخة التجريبية</a>
+          <a class="btn btn-wa" id="waTank" data-goatcounter-click="whatsapp-tank" data-goatcounter-title="واتساب شراء الخزان" href="#" target="_blank" rel="noopener" data-ar="اطلب ترخيص" data-en="Request a licence">اطلب ترخيص</a>
         </div>
         <div class="req" data-ar="يعمل على Windows 10 / 11 (64-bit)" data-en="Runs on Windows 10 / 11 (64-bit)">يعمل على Windows 10 / 11 (64-bit)</div>
+        <div class="note" data-ar="<b>ملاحظة عند التثبيت:</b> إذا ظهرت رسالة ويندوز الزرقاء (Windows protected your PC)، اضغط <b>More info</b> ثم <b>Run anyway</b>. هذا التحذير طبيعي للبرامج الجديدة، والبرنامج آمن." data-en="<b>Installation note:</b> If the blue Windows message (Windows protected your PC) appears, click <b>More info</b> then <b>Run anyway</b>. This warning is normal for new programs, and the program is safe."><b>ملاحظة عند التثبيت:</b> إذا ظهرت رسالة ويندوز الزرقاء (Windows protected your PC)، اضغط <b>More info</b> ثم <b>Run anyway</b>. هذا التحذير طبيعي للبرامج الجديدة، والبرنامج آمن.</div>
       </div>
     </div>
   </div>
@@ -231,7 +233,8 @@ footer b{color:var(--gold-2)}
 /* ===== الإعدادات: عدّل هنا فقط ===== */
 var CONFIG = {
   whatsapp: "972599209173",   // رقم الواتساب بالصيغة الدولية بدون + أو أصفار، مثال: 970599123456
-  bcqDownload: "https://github.com/hes-engineering/hes-engineering.github.io/releases/latest/download/BCQ_Setup.zip"            // رابط تحميل ملف BCQ_Setup.exe من GitHub Releases
+  bcqDownload: "https://github.com/hes-engineering/hes-engineering.github.io/releases/download/BCQ-V1.00/BCQ_Setup.zip",
+  tankDownload: "https://github.com/hes-engineering/hes-engineering.github.io/releases/download/TANK-V1.0/TankDesign_RC_Setup.zip"
 };
 /* ================================== */
 
@@ -241,7 +244,8 @@ function wa(msgAr, msgEn){
   return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(m);
 }
 function setLinks(){
-  document.getElementById("waTank").href = wa("السلام عليكم م. هنادي،\nأرجو إبلاغي عند إطلاق برنامج TankDesign RC.", "Hello Eng. Hanadi,\nPlease let me know when TankDesign RC is released.");
+  document.getElementById("dlTank").href = CONFIG.tankDownload;
+  document.getElementById("waTank").href = wa("السلام عليكم م. هنادي،\nأرغب بشراء ترخيص برنامج TankDesign RC.", "Hello Eng. Hanadi,\nI would like to purchase a TankDesign RC licence.");
   document.getElementById("dlBcq").href = CONFIG.bcqDownload;
   document.getElementById("waBcq").href = wa("السلام عليكم م. هنادي،\nأرغب بشراء ترخيص برنامج BCQ.", "Hello Eng. Hanadi,\nI would like to purchase a BCQ licence.");
   document.getElementById("waMain").href = wa("السلام عليكم م. هنادي،\nلدي استفسار بخصوص برامج HES: ", "Hello Eng. Hanadi,\nI have a question about HES programs: ");
